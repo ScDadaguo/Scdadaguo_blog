@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:replace="themes/default/header::header(title='友情链接',keywords=null)"></div>
+<body>
+<article class="main-content post-page">
+    <div id="post-content" class="post-content">
+        <h3>友情链接</h3>
+        <ul class="flinks">
+            <th:block th:each="link : ${links}">
+                <li>🔒 <a th:href="${link.slug}" target="_blank" th:text="${link.name}"></a></li>
+            </th:block>
+        </ul>
+        <h3>说点想说的</h3>
+        <blockquote>
+
+                我是一个什么样的人？有时候我也会这样问我自己。<br/>
+
+                至少现在还是一名即将实习程序员，不管再忙还在坚持搬砖。<br/>
+
+                但我不认为我以后会一直做一个死板的程序员，我永远不想走人家走过的路。<br/>
+
+                我希望做第一批，或者是第一个吃螃蟹的人。<br/>
+
+                喜欢分享，我会把我的学习经历分享给志同道合的朋友。<br/>
+
+                o(*￣▽￣*)ブ共勉！<br/>
+
+
+        </blockquote>
+        <h3>技术栈</h3>
+        <pre><code class="lang-md hljs markdown">
+         <h3>  <a href="#编程语言"></a>编程语言</h3>
+
+<ul><li><a href="https://www.java.com">Java</a>^†^</li><li><a href="https://www.python.org">Python</a></li><li><a href="https://www.javascript.com">JavaScript</a></li><li><a href="https://www.w3.org/html">HTML</a></li><li><a href="">Sql</a></li></ul>
+
+<h3><a href="#框架"></a>框架</h3>
+
+<ul><li><a href="https://github.com/ReactiveX/RxAndroid">Spring</a>^†^</li><li><a href="https://github.com/greenrobot/EventBus">SpringBoot</a>^†^</li><li><a href="https://github.com/bumptech/glide">SpringCloud</a>^†^</li><li><a href="https://github.com/square/retrofit">Mybatis</a>^†^</li><li><a href="https://github.com/google/gson">Gson</a>^†^</li></ul>
+
+<h3><a href="#工具软件"></a>工具软件</h3>
+
+<ul><li><a href="http://www.adobe.com/cn/products/cs6/photoshop.html">Adobe Photoshop</a></li><li><a href="https://git-scm.com">Git</a>^†^</li><li><a href="https://www.jetbrains.com/idea">IntelliJ IDEA</a>^†^</li><li><a href="https://github.com/robbyrussell/oh-my-zsh">VsCode</a></li><li><a href="https://www.getpostman.com">Postman</a>^†^</li><li><a href="https://www.jetbrains.com/pycharm">PyCharm</a></li><li><a href="https://www.sourcetreeapp.com">Navicat Premium 12</a>^†^</li><li><a href="https://www.xmind.cn">MobaXterm</a>^†^</li><li><a href="">Xshell 6</a></li></ul>
+
+        </code></pre>
+
+        <p>我的邮箱:891792055@qq.com</p>
+        <p>暂时先这样，ok,fine!^_^</p>
+       </div>
+</article>
+</body>
+<div th:replace="themes/default/footer::footer"></div>
+</html>
